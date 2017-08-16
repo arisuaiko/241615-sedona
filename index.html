@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -20,90 +21,121 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main>
         <h1 class="visually-hidden">Город Седона</h1>
         <section class="intro">
             <img src="img/intro.png" width="1200" height="496">
         </section>
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <section>
+            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </section>
         <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
-            <ul>
-                <li>
+
+            <div class="layout-positioner">
+                <div class="layout-column">
                     <h3>Настоящий городок </h3>
-                    <p>- №1 -</p>
+                    <span>- №1 -</span>
                     <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                    <ul>
-                        <li>
-                            <img src="" width="" height="" alt="town">
-                        </li>
-                        <li>
-                            <h4>Жилье</h4>
-                            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                        </li>
-                        <li>
-                            <h4>Еда</h4>
-                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                        </li>
-                        <li>
-                            <h4>Сувениры</h4>
-                            <p>Не только китайского, но и местного производства!</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
+                </div>
+                <div class="layout-column">
+                    <img src="" width="" height="" alt="town">
+                </div>
+            </div>
+
+            <div class="layout-positioner">
+                <div class="layout-column">
+                    <h4>Жилье</h4>
+                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
+
+                <div class="layout-column">
+                    <h4>Еда</h4>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </div>
+
+                <div class="layout-column">
+                    <h4>Сувениры</h4>
+                    <p>Не только китайского, но и местного производства!</p>
+                </div>
+            </div>
+
+            <div class="layout-positioner">
+                <div class="layout-column">
                     <img src="" width="" height="" alt="bridge">
-                </li>
-                <li>
+                </div>
+                <div class="layout-column">
                     <h3>Там есть мост дьявола</h3>
-                    <p>- №2 -</p>
+                    <span>- №2 -</span>
                     <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
-                </li>
-
-                <li>
+                </div>
+            </div>
+            <div class="layout-positioner">
+                <div class="layout-column">
                     <h3>Небольшая площадь</h3>
-                    <p>- №3 -</p>
+                    <span>- №3 -</span>
                     <p>Все достопримечательности находятся очень близко</p>
-                </li>
+                </div>
 
-                <li>
+                <div class="layout-column">
                     <h3>Красивая дорога</h3>
-                    <p>- №4 -</p>
+                    <span>- №4 -</span>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-                </li>
-
-                <li>
+                </div>
+                <div class="layout-column">
                     <h3>Мало туристов</h3>
-                    <p>- №5 -</p>
+                    <span>- №5 -</span>
                     <p>Большинство едет в Гранд Каньон и толпится там</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
         <section class="search">
             <h2 class="search-info">Заинтересовались?</h2>
             <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <h2>Поиск гостинице в Седоне</h2>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="search-item">
-                    Дата заезда
-                    <input type="text" name="date" value="" placeholder="24 апреля 2017">
-                </p>
-                <p>
-                    Дата выезда
-                    <input type="text" name="date" value="" placeholder="4 июля 2017">
-                </p>
-                <p>
-                    Взрослые
-                    <input type='number' name="adult" value="" placeholder="2">
-                </p>
-                <p>
-                    Дети
-                    <input type='number' name="children" value="" placeholder="0">
-                </p>
-                <button class="button" type="submit">Найти</button>
-            </form>
+
+            <a href="catalog.html">Поиск гостинице в Седоне</a>
+
+            <section class="search-data">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="search-item">
+                        <p>
+                            Дата заезда
+                            <input type="text" name="date" value="" placeholder="24 апреля 2017">
+                            <a href="#">calendar</a>
+                        </p>
+                    </div>
+
+                    <div class="search-item">
+                        <p>
+                            Дата выезда
+                            <input type="text" name="date" value="" placeholder="4 июля 2017">
+                            <a href="#">calendar</a>
+                        </p>
+                    </div>
+                    <div class="search-item">
+                        <div class="search-item-adults">
+                            <p>
+                                Взрослые
+                                <input type='number' name="adult" value="" placeholder="2">
+                                <button type="button">+</button>
+                                <button type="button">-</button>
+                            </p>
+                        </div>
+
+                        <div class="search-item-kids">
+                            <p>
+                                Дети
+                                <input type='number' name="children" value="" placeholder="0">
+                                <button type="button">+</button>
+                                <button type="button">-</button>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="catalog.html" class="button">Найти</a>
+                </form>
+            </section>
         </section>
 
         <section class="map">
@@ -112,7 +144,7 @@
     </main>
 
     <footer class="main-footer">
-        <p class="hashtag">#VisitSedona</p>
+        <a href="#" class="hashtag">#VisitSedona</a>
         <div class="footer-social">
             <ul>
                 <li><a class="social-button" href="#">Твиттер</a></li>
