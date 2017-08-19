@@ -1,0 +1,23 @@
+body {
+    font-size: 14px;
+    line-height: normal; 
+    color: black; 
+    font-weight: normal; 
+    font-family: "PT Sans Narrow", sans-serif; 
+}
+
+.h2 {
+    font-size: 21px; 
+    line-height: normal; 
+    color: black; 
+    font-weight: bold; 
+    font-family: "PT Sans Narrow", sans-serif; 
+}
+
+.h3 {
+    font-size: 21px; 
+    line-height: normal; 
+    color: black; 
+    font-weight: bold; 
+    font-family: "PT Sans Narrow", sans-serif; 
+}

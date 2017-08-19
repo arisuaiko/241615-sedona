@@ -7,6 +7,7 @@
 </head>
 
 <body>
+   <div class="wrapper">
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
@@ -24,7 +25,7 @@
     <main>
 
         <section class="choice">
-            <h3 class="visually-hidden">Фильтры</h2>
+            <h3 class="visually-hidden">Фильтры</h3>
 
                 <form action="https://echo.htmlacademy.ru" method="get">
                     <h3>Инфрастуктура</h3>
@@ -48,9 +49,7 @@
                         </label>
                         </li>
                     </ul>
-                </form>
 
-                <form action="https://echo.htmlacademy.ru" method="get">
                     <h3>Тип жилья</h3>
                     <ul class="type-house">
                         <li>
@@ -72,7 +71,7 @@
                         </label>
                     </ul>
                     <label for="range">Стоимость в сутки(Р):</label>
-                    <table>
+                    <table class="range-table">
                         <tr>
                             <td>
                                 От 0
@@ -85,28 +84,28 @@
 
                     0 <input type="range" step="1" min="0" max="3000" id="range"> 3000
 
-                    <button type="submit" class="filter-button button">Показать</button>
+                    <button type="submit" class="filter-button-button">Показать</button>
 
                 </form>
 
         </section>
 
         <section class="sort">
-            <div class="sort-header ">
-                <h2>
+            <div class="sort-header">
+                <h3>
                     Найдено: 3
-                </h2>
+                </h3>
                 <ul class="sort-list">
-                    <p>Сортировка:</p>
                     <li>
-                        <ul>
-                            <li><a href="#">По цене</a></li>
-                            <li><a href="#">По типу</a></li>
-                            <li><a href="#">По рейтингу</a></li>
-                        </ul>
+                        <p>Сортировка:</p>
                     </li>
-                    <li><a href="#">up</a></li>
-                    <li><a href="#">down</a></li>
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По рейтингу</a></li>
+                </ul>
+                <ul class="arrow-list">
+                    <li><a href="#"><img src="img/icon-up-dir.svg" alt="up"></a></li>
+                    <li><a href="#"><img src="img/icon-down-dir.svg" alt="down"></a></li>
                 </ul>
             </div>
 
@@ -118,7 +117,7 @@
                 <li class="catalog-item">
                     <div class="catalog-item-products">
                         <div class="catalog-item-image">
-                            <img src="img/product-1.jpg" width="220" height="165" alt="Гостиница Amara Resort & SPA">
+                            <img src="img/Layer%2021.png" width="135" height="90" alt="Гостиница Amara Resort & SPA">
                         </div>
                         <div class="catalog-item-description">
                             <h3>
@@ -138,15 +137,20 @@
 
                         <div class="catalog-item-rate">
                             <span>Рейтинг: 8,5</span>
-                            <img src="img/stars-4.jpg" alt="четыре звезды">
+                           <ul>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                           </ul>
                         </div>
                     </div>
                 </li>
-                
-                 <li class="catalog-item">
+
+                <li class="catalog-item">
                     <div class="catalog-item-products">
                         <div class="catalog-item-image">
-                            <img src="img/product-2.jpg" width="220" height="165" alt=" Мотель Desert Quail INN">
+                            <img src="img/Layer%2089%20copy.png" width="135" height="90" alt=" Мотель Desert Quail INN">
                         </div>
                         <div class="catalog-item-description">
                             <h3>
@@ -166,19 +170,23 @@
 
                         <div class="catalog-item-rate">
                             <span>Рейтинг: 8,9</span>
-                            <img src="img/stars-3.jpg" alt="три звезды">
+                            <ul>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                           </ul>
                         </div>
                     </div>
                 </li>
-                
-                 <li class="catalog-item">
+
+                <li class="catalog-item">
                     <div class="catalog-item-products">
                         <div class="catalog-item-image">
-                            <img src="img/product-3.jpg" width="220" height="165" alt=" Апартаменты Villas at Poco Diablo">
+                            <img src="img/Layer%2022.png" width="135" height="90" alt=" Апартаменты Villas at Poco Diablo">
                         </div>
                         <div class="catalog-item-description">
                             <h3>
-                               Villas at Poco Diablo
+                                Villas at Poco Diablo
                             </h3>
 
                             <div class="catalog-item-title">
@@ -194,7 +202,10 @@
 
                         <div class="catalog-item-rate">
                             <span>Рейтинг: 9,2</span>
-                            <img src="img/stars-2.jpg" alt="две звезды">
+                           <ul>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                               <li><img src="img/star.svg" alt="одна звезда"></li>
+                           </ul>
                         </div>
                     </div>
                 </li>
@@ -206,9 +217,9 @@
         <a href="#" class="hashtag">#VisitSedona</a>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Youtube</a></li>
+                <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a></li>
+                <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+                <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="Youtube"></a></li>
             </ul>
         </div>
         <p class="footer-copyright">
@@ -216,6 +227,7 @@
             <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
     </footer>
+    </div>
 </body>
 
 </html>
