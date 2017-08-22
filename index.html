@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <title>HTML Academy: Седона</title>
 </head>
 
@@ -19,14 +20,14 @@
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта штата</a></li>
-                    <li><a href="#">Гостиницы</a></li>
+                    <li><a href="catalog.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1 class="visually-hidden">Город Седона</h1>
             <section class="intro">
-                <img src="img/intro.png" width="1200" height="496" alt="Welcome to Sedona!">
+                <h1 class="visually-hidden">Город Седона</h1>
+                <img src="img/intro.jpg" width="1200" height="780" alt="Welcome to Sedona!">
             </section>
             <section class="intro-text">
                 <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -41,7 +42,7 @@
                         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
                     <div class="features-true-city-column">
-                        <img src="img/Layer%2010.jpg" width="800" height="256" alt="town">
+                        <img src="img/true-city.jpg" width="800" height="256" alt="town">
                     </div>
                 </div>
 
@@ -64,7 +65,7 @@
 
                 <div class="features-devil-bridge">
                     <div class="features-devil-bridge-column">
-                        <img src="img/Layer%205.jpg" width="800" height="256" alt="bridge">
+                        <img src="img/devils-bridge.jpg" width="800" height="256" alt="bridge">
                     </div>
                     <div class="features-devil-bridge-column">
                         <h3>Там есть мост дьявола</h3>
@@ -99,11 +100,12 @@
                 <a href="catalog.html" class="search-sedona">Поиск гостинице в Седоне</a>
 
                 <section class="search-date">
+                    <h2 class="visually-hidden">Выбор даты поездки</h2>
                     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                         <div class="search-item">
                             <p class="search-item-input">
-                                Дата заезда
-                                <input type="text" name="date" value="" placeholder="24 апреля 2017">
+                                <label for="arrival-date">Дата заезда</label>
+                                <input type="text" id="arrival-date" name="date" value="" placeholder="24 апреля 2017">
                                 <a href="#">calendar</a>
                             </p>
                         </div>
@@ -111,15 +113,16 @@
                         <div class="search-item">
                             <p class="search-item-output">
                                 Дата выезда
-                                <input type="text" name="date" value="" placeholder="4 июля 2017">
+                                <input type="text" id="departure-date" name="date" value="" placeholder="4 июля 2017">
                                 <a href="#">calendar</a>
                             </p>
                         </div>
                         <div class="search-item">
                             <div class="search-item-adults">
                                 <p>
-                                    Взрослые
-                                    <input type='number' name="adult" value="" placeholder="2">
+                                    <label for="adults">Взрослые</label>
+                                    <input type='number' name="adult" value="" placeholder="2" id="adults">
+
                                     <button type="button">+</button>
                                     <button type="button">-</button>
                                 </p>
@@ -127,8 +130,8 @@
 
                             <div class="search-item-kids">
                                 <p>
-                                    Дети
-                                    <input type='number' name="children" value="" placeholder="0">
+                                    <label for="children">Дети</label>
+                                    <input type='number' name="children" value="" placeholder="0" id="children">
                                     <button type="button">+</button>
                                     <button type="button">-</button>
                                 </p>
@@ -140,7 +143,9 @@
             </section>
 
             <section class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13095.333668914907!2d-111.79591143633573!3d34.86041281434688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1502633095521" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h2 class="visually-hidden">Город Седона расположен в США, штат Аризона</h2>
+                <!--     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13095.333668914907!2d-111.79591143633573!3d34.86041281434688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1502633095521" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                <img src="img/map.jpg" alt="Город Седона расположен в США, штат Аризона" width="1200" height="593">
             </section>
         </main>
 
@@ -149,10 +154,10 @@
             <div class="footer-social">
                 <ul>
                     <li>
-                        <a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+                        <a class="social-button" href="#"><img src="img/twitter.svg" alt="Twitter"></a>
                     </li>
                     <li>
-                        <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
+                        <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Facebook"></a>
                     </li>
                     <li>
                         <a class="social-button" href="#"><img src="img/youtube.svg" alt="Youtube"></a>
