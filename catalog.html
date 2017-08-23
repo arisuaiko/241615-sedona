@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
     <div class="wrapper">
         <header class="main-header">
             <nav class="main-navigation">
@@ -28,27 +29,27 @@
 
             <section class="choice">
                 <h3 class="visually-hidden">Фильтры</h3>
-           <!--     <section class="choice-background">
+             <section class="choice-background">
                     <img src="img/background.jpg" width="1200" height="562">
-                </section> -->
+                </section>
                 <form action="https://echo.htmlacademy.ru" method="get">
-                   <img src="img/background.jpg" width="1200" height="562" alt="Фон, показывающий размытые горы">
+                 <!--   <img src="img/background.jpg" width="1200" height="562" alt="Фон, показывающий размытые горы"> !-->
                     <h3>Инфрастуктура</h3>
                     <ul class="infrastucture">
                         <li>
-                            <input type="checkbox" name="pool" id="pool-field">
+                            <input class="filter-input" type="checkbox" name="pool" id="pool-field">
                             <label for="pool-field">
                              Бассейн
                         </label>
                         </li>
                         <li>
-                            <input type="checkbox" name="parking" id="parking-field">
+                            <input class="filter-input" type="checkbox" name="parking" id="parking-field">
                             <label for="parking-field">
                              Парковка
                         </label>
                         </li>
                         <li>
-                            <input type="checkbox" name="wifi" id="wifi-field">
+                            <input class="filter-input" type="checkbox" name="wifi" id="wifi-field" disabled>
                             <label for="wifi-field">
                              WI-FI
                         </label>
@@ -58,19 +59,19 @@
                     <h3>Тип жилья</h3>
                     <ul class="type-house">
                         <li>
-                            <input type="checkbox" name="hotel" id="hotel-field">
+                            <input class="filter-input" type="checkbox" name="hotel" id="hotel-field">
                             <label for="hotel-field">
                              Гостиница
                         </label>
                         </li>
                         <li>
-                            <input type="checkbox" name="motel" id="motel-field">
+                            <input  class="filter-input" type="checkbox" name="motel" id="motel-field">
                             <label for="motel-field">
                              Мотель
                         </label>
                         </li>
                         <li>
-                            <input type="checkbox" name="apartments" id="apartments-field">
+                            <input class="filter-input" type="checkbox" name="apartments" id="apartments-field">
                             <label for="apartments-field">
                             Апартаменты
                         </label>
