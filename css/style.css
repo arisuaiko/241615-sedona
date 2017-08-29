@@ -243,6 +243,7 @@ nav ul {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
+    position: relative; 
 }
 
 .search-info h2 {
@@ -258,6 +259,14 @@ nav ul {
 .search-sedona {
     background-color: #766357;
     color: #ffffff;
+}
+
+.search-date {
+    position: absolute;
+    background-color: #ffffff;
+    left: 447px;
+    right: auto;
+    top: 171px;
 }
 
 .search-item {
@@ -312,7 +321,7 @@ nav ul {
 .choice-all {
     display: flex;
     margin-bottom: 31px;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .choice ul {
@@ -345,7 +354,7 @@ nav ul {
     min-height: 166px;
     width: 317px;
     margin-left: auto;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .range-table {
@@ -360,7 +369,7 @@ th {
     padding: 11px;
     text-align: center;
     border: 2px solid #ffffff;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .filter-input:hover+label,
