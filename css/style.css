@@ -243,7 +243,7 @@ nav ul {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
 .search-info h2 {
@@ -350,26 +350,120 @@ nav ul {
 }
 
 .choice-range {
-    padding-top: 32px;
-    min-height: 166px;
-    width: 317px;
+    width: 330px;
     margin-left: auto;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
-.range-table {
-    min-height: 37px;
-    width: 317px;
-    border-collapse: collapse;
-    border: 2px solid #000000;
+.choice-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
 }
 
-td,
-th {
-    padding: 11px;
-    text-align: center;
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
     border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.filter-button-button {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
     color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-button-button:hover {
+    color: #000000;
+    background: #ffffff;
 }
 
 .filter-input:hover+label,
@@ -382,25 +476,44 @@ th {
     opacity: 0.5;
 }
 
+.sort-header {
+    display: flex;
+    flex-direction: row;
+}
+
 .sort ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.sort-header ul {
-    display: flex;
+.sort-header h3 {
+    margin-left: 73px;
+    margin-right: 53px;
+}
+
+.sort-list li {
+    margin-right: 288px;
+}
+
+.arrow-list {
+    margin-right: 39px; 
 }
 
 .catalog ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    flex-direction: column;
 }
 
 .catalog-item-products {
     display: flex;
+     margin-top: 30px;
+}
+
+.catalog-item-image {
+    margin-top: 30px;
+    margin-left: 73px;
 }
 
 .catalog-item-description {
@@ -410,9 +523,11 @@ th {
 
 .catalog-item-rate {
     margin-left: auto;
-    margin-right: 49px;
+    margin-right: 73px;
 }
-
+.catalog-item-rate li {
+    order: 2; 
+}
 .main-footer {
     padding: 36px 0;
     color: #000000;

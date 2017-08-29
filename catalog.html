@@ -54,42 +54,40 @@
                             </ul>
                         </div>
                         <div class="choice-type-house">
-                        <h3>Тип жилья</h3>
-                        <ul class="type-house">
-                            <li>
-                                <input class="filter-input" type="checkbox" name="hotel" id="hotel-field">
-                                <label for="hotel-field">
+                            <h3>Тип жилья</h3>
+                            <ul class="type-house">
+                                <li>
+                                    <input class="filter-input" type="checkbox" name="hotel" id="hotel-field">
+                                    <label for="hotel-field">
                              Гостиница
                         </label>
-                            </li>
-                            <li>
-                                <input class="filter-input" type="checkbox" name="motel" id="motel-field">
-                                <label for="motel-field">
+                                </li>
+                                <li>
+                                    <input class="filter-input" type="checkbox" name="motel" id="motel-field">
+                                    <label for="motel-field">
                              Мотель
                         </label>
-                            </li>
-                            <li>
-                                <input class="filter-input" type="checkbox" name="apartments" id="apartments-field">
-                                <label for="apartments-field">
+                                </li>
+                                <li>
+                                    <input class="filter-input" type="checkbox" name="apartments" id="apartments-field">
+                                    <label for="apartments-field">
                             Апартаменты
                         </label>
-                        </ul>
+                            </ul>
                         </div>
                         <div class="choice-range">
-                            <label for="range">Стоимость в сутки(Р):</label>
-                            <table class="range-table">
-                                <tr>
-                                    <td>
-                                        От 0
-                                    </td>
-                                    <td>
-                                        До 3000
-                                    </td>
-                                </tr>
-                            </table>
-                            <label>
-                    0 <input type="range" step="1" min="0" max="3000" id="range"> 3000
-                    </label>
+                            <div class="choice-range-title">Стоимость в сутки(Р):</div>
+                            <div class="price-controls">
+                                <label class="min-price">от <input type="text" name="min-price" value="0"> </label>
+                                <label class="max-price">до <input type="text" name="max-price" value="3000"> </label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="range-toggle range-toggle-min"></div>
+                                <div class="range-toggle range-toggle-max"></div>
+                            </div>
                             <button type="submit" class="filter-button-button">Показать</button>
                         </div>
                     </form>
