@@ -335,12 +335,16 @@ nav ul {
 .choice-type-house {
     display: flex;
     flex-direction: column;
+    margin-left: 73px;
 }
 
 .infrastucture {
     padding-top: 32px;
-    min-height: 166px;
     width: 241px;
+}
+
+.infrastucture li {
+      padding-top: 21px; 
 }
 
 .type-house {
@@ -349,9 +353,15 @@ nav ul {
     width: 241px;
 }
 
+.type-house li {
+    padding-top: 21px; 
+}
+
 .choice-range {
+    padding-top: 15px;
+    margin-left: auto; 
+    margin-right: 73px; 
     width: 330px;
-    margin-left: auto;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -478,7 +488,6 @@ nav ul {
 
 .sort-header {
     display: flex;
-    flex-direction: row;
 }
 
 .sort ul {
@@ -497,7 +506,9 @@ nav ul {
 }
 
 .arrow-list {
-    margin-right: 39px; 
+    margin-top: 38px;
+    margin-left: auto; 
+    margin-right: 39px;
 }
 
 .catalog ul {
@@ -508,7 +519,7 @@ nav ul {
 
 .catalog-item-products {
     display: flex;
-     margin-top: 30px;
+    margin-top: 30px;
 }
 
 .catalog-item-image {
@@ -524,10 +535,10 @@ nav ul {
 .catalog-item-rate {
     margin-left: auto;
     margin-right: 73px;
+    display: flex;
+    flex-direction: column;
 }
-.catalog-item-rate li {
-    order: 2; 
-}
+
 .main-footer {
     padding: 36px 0;
     color: #000000;
