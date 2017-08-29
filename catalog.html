@@ -26,33 +26,34 @@
         </header>
 
         <main>
-
             <section class="choice">
                 <h3 class="visually-hidden">Фильтры</h3>
                 <div class="container-2">
                     <form class="choice-all" action="https://echo.htmlacademy.ru" method="get">
-                        <h3>Инфрастуктура</h3>
-                        <ul class="infrastucture">
-                            <li>
-                                <input class="filter-input" type="checkbox" name="pool" id="pool-field">
-                                <label for="pool-field">
+                        <div class="choice-infrastucture">
+                            <h3>Инфрастуктура</h3>
+                            <ul class="infrastucture">
+                                <li>
+                                    <input class="filter-input" type="checkbox" name="pool" id="pool-field">
+                                    <label for="pool-field">
                              Бассейн
                         </label>
-                            </li>
-                            <li>
-                                <input class="filter-input" type="checkbox" name="parking" id="parking-field">
-                                <label for="parking-field">
+                                </li>
+                                <li>
+                                    <input class="filter-input" type="checkbox" name="parking" id="parking-field">
+                                    <label for="parking-field">
                              Парковка
                         </label>
-                            </li>
-                            <li>
-                                <input class="filter-input" type="checkbox" name="wifi" id="wifi-field" disabled>
-                                <label for="wifi-field">
+                                </li>
+                                <li>
+                                    <input class="filter-input" type="checkbox" name="wifi" id="wifi-field" disabled>
+                                    <label for="wifi-field">
                              WI-FI
                         </label>
-                            </li>
-                        </ul>
-
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="choice-type-house">
                         <h3>Тип жилья</h3>
                         <ul class="type-house">
                             <li>
@@ -73,22 +74,24 @@
                             Апартаменты
                         </label>
                         </ul>
-                        <label for="range">Стоимость в сутки(Р):</label>
-                        <table class="range-table">
-                            <tr>
-                                <td>
-                                    От 0
-                                </td>
-                                <td>
-                                    До 3000
-                                </td>
-                            </tr>
-                        </table>
-                        <label>
+                        </div>
+                        <div class="choice-range">
+                            <label for="range">Стоимость в сутки(Р):</label>
+                            <table class="range-table">
+                                <tr>
+                                    <td>
+                                        От 0
+                                    </td>
+                                    <td>
+                                        До 3000
+                                    </td>
+                                </tr>
+                            </table>
+                            <label>
                     0 <input type="range" step="1" min="0" max="3000" id="range"> 3000
                     </label>
-                        <button type="submit" class="filter-button-button">Показать</button>
-
+                            <button type="submit" class="filter-button-button">Показать</button>
+                        </div>
                     </form>
                 </div>
             </section>

@@ -6,7 +6,7 @@ body {
     line-height: 26px;
     color: #333333;
     text-transform: uppercase;
-    background-color: #f2f2f2;
+    background-color: #eeeeee;
 }
 
 a {
@@ -109,6 +109,7 @@ nav ul {
 .site-navigation li {
     width: 20%;
     text-align: center;
+    padding-top: 22px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -130,8 +131,10 @@ nav ul {
 }
 
 .intro-text h2 {
+    padding-top: 65px;
+    padding-bottom: 41px;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 0px;
 }
 
 .features {
@@ -153,9 +156,21 @@ nav ul {
 }
 
 .features-true-city-column-1 {
-    min-height: 256px;
     width: 400px;
-    padding: 50px 60px;
+    padding: 43px 52px;
+}
+
+.features-true-city-column-1 p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.features-true-city-column-1 h3 {
+    line-height: 0px;
+}
+
+.features-true-city-column-2 {
+    line-height: 0px;
 }
 
 .features-city-adv {
@@ -166,8 +181,12 @@ nav ul {
 .features-city-adv-column {
     padding-top: 57px;
     padding-bottom: 83px;
-    padding-left: 73px;
-    padding-right: 73px;
+    width: 400px;
+}
+
+.features-city-adv-column p {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .features-devil-bridge {
@@ -178,10 +197,22 @@ nav ul {
     background-color: #81b3d2;
 }
 
+.features-devil-bridge-column-1 {
+    line-height: 0px;
+}
+
 .features-devil-bridge-column-2 {
-    min-height: 256px;
     width: 400px;
-    padding: 50px 60px;
+    padding: 37px 48px;
+}
+
+.features-devil-bridge-column-2 p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.features-devil-bridge-column-2 h3 {
+    line-height: 0px;
 }
 
 .features-city-advant {
@@ -194,9 +225,17 @@ nav ul {
 
 .features-city-advant-column {
     padding-top: 50px;
-    padding-left: 73px;
-    padding-right: 73px;
     padding-bottom: 65px;
+    width: 400px;
+}
+
+.features-city-advant-column p {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.features-city-advant-column h3 {
+    line-height: 0px;
 }
 
 .search {
@@ -210,6 +249,10 @@ nav ul {
     font-size: 30px;
     line-height: 36px;
     padding-top: 58px;
+}
+
+.search-info p {
+    line-height: 0px;
 }
 
 .search-sedona {
@@ -268,6 +311,8 @@ nav ul {
 
 .choice-all {
     display: flex;
+    margin-bottom: 31px;
+    color: #ffffff; 
 }
 
 .choice ul {
@@ -275,6 +320,12 @@ nav ul {
     padding: 0;
     list-style: none;
     line-height: 21px;
+}
+
+.choice-infrastucture,
+.choice-type-house {
+    display: flex;
+    flex-direction: column;
 }
 
 .infrastucture {
@@ -289,10 +340,27 @@ nav ul {
     width: 241px;
 }
 
-.range-table {
+.choice-range {
     padding-top: 32px;
     min-height: 166px;
-    width: 241px;
+    width: 317px;
+    margin-left: auto;
+    color: #ffffff; 
+}
+
+.range-table {
+    min-height: 37px;
+    width: 317px;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+}
+
+td,
+th {
+    padding: 11px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    color: #ffffff; 
 }
 
 .filter-input:hover+label,
@@ -305,43 +373,38 @@ nav ul {
     opacity: 0.5;
 }
 
-.range-table {
-    border-collapse: collapse;
-    border: 2px solid #000000;
-}
-
-td,
-th {
-    padding: 5px;
-    border: 2px solid #000000;
-}
-
 .sort ul {
     margin: 0;
     padding: 0;
     list-style: none;
- 
-}
-.sort-header ul {
-        display: flex;
 }
 
+.sort-header ul {
+    display: flex;
+}
 
 .catalog ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .catalog-item-products {
-    min-height: 150px;
-    width: 1056px;
+    display: flex;
+}
+
+.catalog-item-description {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.catalog-item-rate {
+    margin-left: auto;
+    margin-right: 49px;
 }
 
 .main-footer {
-    min-height: 120px;
     padding: 36px 0;
     color: #000000;
     background-color: #ffffff;
