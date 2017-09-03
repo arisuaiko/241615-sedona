@@ -281,7 +281,12 @@ nav ul {
 /*  position: absolute;
     background-color: #ffffff;
     
-    top: 171px;*/
+    top: 171px;
+
+    padding: 55px;
+ background: url("../img/minus.png") no-repeat center;
+background: url("../img/plus.png") no-repeat center;
+*/
 
 .search-date {
     position: relative;
@@ -297,6 +302,7 @@ nav ul {
     right: auto;
     font-size: 14px;
     line-height: 26px;
+    font-weight: 700;
 }
 
 .search-item-top {
@@ -347,7 +353,7 @@ nav ul {
     padding-right: 10px;
     border: none;
     background: #f2f2f2;
-    width: 38px;
+    width: 30px;
 }
 
 .form-small-block {
@@ -358,18 +364,27 @@ nav ul {
 .search-item-b .gray-btn {
     width: 38px;
     border: none;
-    height: 38px;
+    height: 40px;
 }
 
 .minus {
-    margin-left: 40px;
-    background: url("../img/minus.png") no-repeat center;
     background-color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 700;
+    color: #a9a9a9;
+    margin-left: 25px;
 }
 
 .plus {
-    background: url("../img/plus.png") no-repeat center;
     background-color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 700;
+    color: #a9a9a9;
+}
+
+.minus:hover,
+.plus:hover {
+    color: #000000;
 }
 
 .blue-button {
@@ -415,8 +430,8 @@ nav ul {
 
 .choice-all {
     display: flex;
-    margin-bottom: 31px;
-    color: #ffffff;
+    justify-content: space-between;
+    width: 1200px;
 }
 
 .choice ul {
@@ -440,6 +455,18 @@ nav ul {
 
 .infrastucture li {
     padding-top: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.infrastucture input {
+    margin-right: 15px;
+}
+
+.infrastucture label {
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
 }
 
 .type-house {
@@ -450,11 +477,23 @@ nav ul {
 
 .type-house li {
     padding-top: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.type-house input {
+    margin-right: 15px;
+}
+
+.type-house label {
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
 }
 
 .choice-range {
     padding-top: 15px;
-    margin-left: auto;
+    margin-left: 180px;
     margin-right: 73px;
     width: 330px;
     color: #ffffff;
@@ -583,6 +622,11 @@ nav ul {
 
 .sort-header {
     display: flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 73px;
+    height: 85px;
+    align-items: center;
 }
 
 .sort ul {
@@ -592,18 +636,49 @@ nav ul {
 }
 
 .sort-header h3 {
-    margin-left: 73px;
     margin-right: 53px;
 }
 
+.sort-list {
+    margin-left: 45px;
+    display: flex;
+    font-family: "PT sans", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+}
+
+.sort-list li:first-child {
+    margin-right: 40px;
+}
+
+.sort-list li:last-child {
+    margin-right: 0px;
+}
+
 .sort-list li {
-    margin-right: 288px;
+    margin-right: 30px;
+}
+
+.sort-list a {
+    color: #e0e0e0;
+    border-bottom: dotted 1px #81b3d2;
+}
+
+.sort-list .active {
+    color: #81b3d2;
+    border: none;
 }
 
 .arrow-list {
-    margin-top: 38px;
-    margin-left: auto;
-    margin-right: 39px;
+    display: flex;
+}
+
+.sort-header-left {
+    display: flex;
+    font-family: "PT sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
 }
 
 .catalog ul {
@@ -612,32 +687,159 @@ nav ul {
     list-style: none;
 }
 
+.catalog-item {
+    border-top: solid 1px #e5e5e5;
+    display: flex;
+    padding: 30px 73px;
+}
+
+.catalog-item:last-child {
+    border-bottom: solid 1px #e5e5e5;
+}
+
 .catalog-item-products {
     display: flex;
     margin-top: 30px;
 }
 
-.catalog-item-image {
-    margin-top: 30px;
-    margin-left: 73px;
-}
-
 .catalog-item-description {
-    margin-right: auto;
     margin-left: 30px;
 }
 
-.catalog-item-rate {
-    margin-left: auto;
-    margin-right: 73px;
-    display: flex;
-    flex-direction: column;
+.catalog-item-description span {
+    padding-left: 38px;
 }
 
+.catalog-item-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-discript {
+    width: 112px;
+    margin-right: 5px;
+}
+
+.price-number {
+    margin-right: auto;
+}
+
+.catalog-item-price {
+    width: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    line-height: 21px;
+}
+
+.catalog-item-price-info {
+    color: white;
+    padding: 3px 18px;
+    background: #81b3d2;
+}
+
+.catalog-item-price-info:hover,
+.catalog-item-price-info:focus {
+    background: #669ec0;
+    outline: none;
+}
+
+.catalog-item-price-info {
+    background: #5496bd;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.info-brown {
+    margin-left: 5px;
+    background: #766357;
+}
+
+.info-brown:hover,
+.info-brown:focus {
+    background: #604e43;
+    outline: none;
+}
+
+.info-brown:active {
+    background: #503e33;
+    color: #928a85;
+}
+
+.catalog-item-rate {
+    margin-left: 446px;
+    margin-right: 73px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+.catalog-item-rate-star {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.catalog-item-rating-namber {
+    height: 27px;
+    width: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+
+
+.footer-catalog {
+    bottom: 0;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: -120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*
 .main-footer {
     bottom: 0;
     height: 120px;
     background: rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+    margin-top: -120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}*/
+
+.footer-index {
+    bottom: 0;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+    margin-top: -120px;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -96,23 +96,23 @@
 
             <section class="sort">
                 <div class="sort-header">
-                    <h3>
-                        Найдено: 3
-                    </h3>
-                    <ul class="sort-list">
-                        <li>
-                            <p>Сортировка:</p>
-                        </li>
-                        <li><a href="#">По цене</a></li>
-                        <li><a href="#">По типу</a></li>
-                        <li><a href="#">По рейтингу</a></li>
-                    </ul>
+                    <div class="sort-header-left">
+                        <h3>Найдено: 3</h3>
+                        <ul class="sort-list">
+                            <li>
+                                <p>Сортировка:</p>
+                            </li>
+                            <li><a href="#" class="sorting-item active">По цене</a></li>
+                            <li><a href="#" class="sorting-item">По типу</a></li>
+                            <li><a href="#" class="sorting-item">По рейтингу</a></li>
+                        </ul>
+                    </div>
                     <ul class="arrow-list">
                         <li>
-                            <a href="#"><img src="img/icon-up-dir.svg" alt="up"></a>
+                            <a href="#" class="arrow-list-up"><img src="img/icon-up-dir.svg" alt="up"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/icon-down-dir.svg" alt="down"></a>
+                            <a href="#" class="arrow-list-down"><img src="img/icon-down-dir.svg" alt="down"></a>
                         </li>
                     </ul>
                 </div>
@@ -133,24 +133,25 @@
                                 </h3>
 
                                 <div class="catalog-item-title">
-                                    <span>Гостиница</span>
-                                    <a href="#" class="button">Подробнее</a>
+                                    <p class="price-discript">Гостиница</p>
+                                    <span class="price-number">От 4000 ₽</span>
+
                                 </div>
 
                                 <div class="catalog-item-price">
-                                    <b>От 4000 ₽</b>
-                                    <a class="button" href="#">Забронировать</a>
+                                    <a href="#" class="catalog-item-price-info">Подробнее</a>
+                                    <a class="catalog-item-price-info info-brown" href="#">Забронировать</a>
                                 </div>
                             </div>
 
                             <div class="catalog-item-rate">
-                                <ul>
+                                <ul class="catalog-item-rate-star">
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                 </ul>
-                                <span>Рейтинг: 8,5</span>
+                                <span class="catalog-item-rating-namber">Рейтинг: 8,5</span>
                             </div>
                         </div>
                     </li>
@@ -166,23 +167,24 @@
                                 </h3>
 
                                 <div class="catalog-item-title">
-                                    <span>Мотель</span>
-                                    <a href="#" class="button">Подробнее</a>
+                                    <p class="price-discript">Мотель</p>
+                                    <span class="price-number">От 3000 ₽</span>
+
                                 </div>
 
                                 <div class="catalog-item-price">
-                                    <b>От 3000 ₽</b>
-                                    <a class="button" href="#">Забронировать</a>
+                                    <a href="#" class="catalog-item-price-info">Подробнее</a>
+                                    <a class="catalog-item-price-info info-brown" href="#">Забронировать</a>
                                 </div>
                             </div>
 
                             <div class="catalog-item-rate">
-                                <ul>
+                                <ul class="catalog-item-rate-star">
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                 </ul>
-                                <span>Рейтинг: 8,9</span>
+                                <span class="catalog-item-rating-namber">Рейтинг: 8,9</span>
                             </div>
                         </div>
                     </li>
@@ -198,22 +200,23 @@
                                 </h3>
 
                                 <div class="catalog-item-title">
-                                    <span>Апартаменты</span>
-                                    <a href="#" class="button">Подробнее</a>
+                                    <p class="price-discript">Апартаменты</p>
+                                    <span class="price-number">От 2000 ₽</span>
+
                                 </div>
 
                                 <div class="catalog-item-price">
-                                    <b>От 2000 ₽</b>
-                                    <a class="button" href="#">Забронировать</a>
+                                    <a href="#" class="catalog-item-price-info">Подробнее</a>
+                                    <a class="catalog-item-price-info info-brown" href="#">Забронировать</a>
                                 </div>
                             </div>
 
                             <div class="catalog-item-rate">
-                                <ul>
+                                <ul class="catalog-item-rate-star">
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                     <li><img src="img/star.svg" alt="одна звезда"></li>
                                 </ul>
-                                    <span>Рейтинг: 9,2</span>
+                                <span class="catalog-item-rating-namber">Рейтинг: 9,2</span>
                             </div>
                         </div>
                     </li>
@@ -221,26 +224,28 @@
             </section>
         </main>
 
-        <footer class="main-footer">
-            <a href="#" class="hashtag">#VisitSedona</a>
-            <div class="footer-social">
-                <ul>
-                    <li>
-                        <a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#"><img src="img/youtube.svg" alt="Youtube"></a>
-                    </li>
-                </ul>
-            </div>
-            <p class="footer-copyright">
-                Website by
-                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-            </p>
-        </footer>
+        <div class="footer-catalog">
+            <footer class="main-footer">
+                <a href="#" class="hashtag">#VisitSedona</a>
+                <div class="footer-social">
+                    <ul>
+                        <li>
+                            <a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="#"><img src="img/youtube.svg" alt="Youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer-copyright">
+                    Website by
+                    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                </p>
+            </footer>
+        </div>
     </div>
 </body>
 
