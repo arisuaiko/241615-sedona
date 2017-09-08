@@ -461,12 +461,33 @@ background: url("../img/plus.png") no-repeat center;
 
 .infrastucture input {
     margin-right: 15px;
+    display: none;
 }
 
 .infrastucture label {
     font-size: 14px;
     line-height: 21px;
-    color: white;
+    color: #ffffff;
+    padding-left: 40px;
+    position: relative;
+}
+
+.infrastucture label:before {
+    content: "";
+    position: absolute;
+    background: url("../img/checkbox-off.svg");
+    width: 23px;
+    height: 23px;
+    left: 0px;
+}
+
+.infrastucture input[type="checkbox"]:checked+label:before {
+    content: "";
+    position: absolute;
+    background: url("../img/checkbox-on.svg");
+    width: 23px;
+    height: 23px;
+    left: 0px;
 }
 
 .type-house {
@@ -483,12 +504,33 @@ background: url("../img/plus.png") no-repeat center;
 
 .type-house input {
     margin-right: 15px;
+    display: none;
 }
 
 .type-house label {
     font-size: 14px;
     line-height: 21px;
-    color: white;
+    color: #ffffff;
+    padding-left: 40px;
+    position: relative;
+}
+
+.type-house label:before {
+    content: "";
+    position: absolute;
+    background: url("../img/checkbox-off.svg");
+    width: 23px;
+    height: 23px;
+    left: 0px;
+}
+
+.type-house input[type="checkbox"]:checked+label:before {
+    content: "";
+    position: absolute;
+    background: url("../img/checkbox-on.svg");
+    width: 23px;
+    height: 23px;
+    left: 0px;
 }
 
 .choice-range {
@@ -706,6 +748,20 @@ background: url("../img/plus.png") no-repeat center;
     margin-left: 30px;
 }
 
+.catalog-item-description h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item-description2 {
+    color: black;
+    font-family: "PT sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
 .catalog-item-description span {
     padding-left: 38px;
 }
@@ -811,7 +867,6 @@ background: url("../img/plus.png") no-repeat center;
     background: #f2f2f2;
 }
 
-
 .footer-catalog {
     bottom: 0;
     height: 120px;
@@ -822,24 +877,19 @@ background: url("../img/plus.png") no-repeat center;
     align-items: center;
 }
 
-/*
-.main-footer {
-    bottom: 0;
-    height: 120px;
-    background: rgba(255, 255, 255, 0.9);
-    opacity: 0.9;
-    margin-top: -120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}*/
-
 .footer-index {
     bottom: 0;
     height: 120px;
     background: rgba(255, 255, 255, 0.9);
     opacity: 0.9;
-    margin-top: -120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-footer {
+    bottom: 0;
+    height: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
