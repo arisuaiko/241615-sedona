@@ -894,18 +894,8 @@ background: url("../img/plus.png") no-repeat center;
     background: #f2f2f2;
 }
 
-.footer-catalog {
-    bottom: 0;
-    height: 120px;
-    background: rgba(255, 255, 255, 0.9);
-    margin-top: -120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .footer-index {
-    background: #fff;
+    background: #ffffff;
     position: relative;
     height: 120px;
 }
@@ -942,6 +932,7 @@ background: url("../img/plus.png") no-repeat center;
     line-height: 26px;
     font-family: "PT sans", Arial, sans-serif;
     font-weight: 700;
+    margin-left: 40px;
 }
 
 .footer-social {
@@ -1015,6 +1006,12 @@ background: url("../img/plus.png") no-repeat center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.logo-footer {
+    margin-left: 10px;
 }
 
 .footer-copyright .logo-footer {
@@ -1022,12 +1019,8 @@ background: url("../img/plus.png") no-repeat center;
     text-decoration: none;
 }
 
-.logo-footer {
-    margin-left: 10px;
-}
-
 .logo-footer svg {
-    width: 116px;
+    width: 115px;
 }
 
 .logo-footer svg:hover,
