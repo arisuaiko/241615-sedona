@@ -741,7 +741,6 @@ background: url("../img/plus.png") no-repeat center;
 
 .catalog-item-products {
     display: flex;
-    margin-top: 30px;
 }
 
 .catalog-item-description {
@@ -754,16 +753,16 @@ background: url("../img/plus.png") no-repeat center;
 }
 
 .catalog-item-description2 {
-    color: black;
+    color: #000000;
     font-family: "PT sans", Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 21px;
     line-height: 26px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .catalog-item-description span {
-    padding-left: 38px;
+   
 }
 
 .catalog-item-title {
@@ -827,8 +826,7 @@ background: url("../img/plus.png") no-repeat center;
 }
 
 .catalog-item-rate {
-    margin-left: 446px;
-    margin-right: 73px;
+    margin-left: 520px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -850,6 +848,16 @@ background: url("../img/plus.png") no-repeat center;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+}
+
+.catalog-item-rate-star li {
+    width: 18px;
+  height: 18px;
+  background: url("../img/star.svg") no-repeat center;
+}
+
+.catalog-item-rate-star li:not(:last-child) {
+  margin-right: 5px;
 }
 
 .catalog-item-rating-namber {
