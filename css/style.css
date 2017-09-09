@@ -131,6 +131,7 @@ nav ul {
 }
 
 .intro-text {
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -167,10 +168,16 @@ nav ul {
 
 .features-true-city-column-1 {
     width: 400px;
-    padding: 43px 52px;
+    padding: 43px 40px;
 }
 
-.features-true-city-column-1 p {
+.small-one {
+    margin-top: 30px;
+    padding: 0 75px;
+}
+
+.small-two {
+    margin-top: 22px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -189,8 +196,8 @@ nav ul {
 }
 
 .features-city-adv-column {
-    padding-top: 57px;
-    padding-bottom: 83px;
+    padding-top: 59px;
+    padding-bottom: 76px;
     width: 400px;
 }
 
@@ -213,12 +220,7 @@ nav ul {
 
 .features-devil-bridge-column-2 {
     width: 400px;
-    padding: 37px 48px;
-}
-
-.features-devil-bridge-column-2 p {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 37px 30px;
 }
 
 .features-devil-bridge-column-2 h3 {
@@ -235,17 +237,23 @@ nav ul {
 
 .features-city-advant-column {
     padding-top: 50px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
     width: 400px;
 }
 
-.features-city-advant-column p {
-    padding-left: 70px;
-    padding-right: 70px;
+.features-city-advant-column h3 {
+    margin: 0;
 }
 
-.features-city-advant-column h3 {
-    line-height: 0px;
+.small-three {
+    margin-top: 20px;
+    padding: 0 75px;
+}
+
+.small-four {
+    margin-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .search {
@@ -260,17 +268,17 @@ nav ul {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    padding-top: 55px;
-    padding-bottom: 35px;
+    padding-top: 39px;
+    padding-bottom: 24px;
 }
 
 .btn {
     background: transparent;
     border: none;
     text-transform: uppercase;
-    color: white;
-    font-size: 21px;
-    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .brown-btn {
@@ -283,17 +291,6 @@ nav ul {
     width: 567px;
     height: 86px;
 }
-
-
-/*  position: absolute;
-    background-color: #ffffff;
-    
-    top: 171px;
-
-    padding: 55px;
- background: url("../img/minus.png") no-repeat center;
-background: url("../img/plus.png") no-repeat center;
-*/
 
 .search-date {
     position: relative;
@@ -313,30 +310,73 @@ background: url("../img/plus.png") no-repeat center;
 }
 
 .search-item-top {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .search-item-top input {
-    font: inherit;
-    border-color: #f2f2f2;
     width: 345px;
     height: 38px;
+    font-family: "PT sans bold", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
     padding-left: 10px;
     padding-right: 10px;
     border: none;
-    background: url("../img/calendar.svg") no-repeat, #f2f2f2;
-    background-position: 98% 8px;
+    background: #f2f2f2;
+    margin-left: auto;
+}
+
+.search-item-top input:hover,
+.search-item-bottom input:hover {
+    background: #ebebeb;
+}
+
+.search-item-top input:focus,
+.search-item-bottom input:focus {
+    outline: 2px solid #e5e5e5;
+    background: #fff;
+    color: black;
+}
+
+.calendar-icon {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 7px;
+    top: 6px;
+}
+
+.calendar-icon svg {
+    fill: #cacaca;
+}
+
+.search-item-top svg:hover {
+    fill: black;
+}
+
+.search-item-top svg:active {
+    fill: #89b8d5;
 }
 
 .search-item-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -345,8 +385,9 @@ background: url("../img/plus.png") no-repeat center;
 }
 
 .search-item-b {
-    width: 229px;
+    width: 200px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -355,16 +396,21 @@ background: url("../img/plus.png") no-repeat center;
     height: 38px;
     font-size: 14px;
     line-height: 26px;
+    font-weight: bold;
     text-transform: uppercase;
     padding-left: 15px;
-    padding-right: 10px;
+    padding-right: 15px;
     border: none;
     background: #f2f2f2;
-    width: 30px;
+    width: 38px;
 }
 
 .form-small-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -376,8 +422,8 @@ background: url("../img/plus.png") no-repeat center;
 
 .minus {
     background-color: #f2f2f2;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 21px;
+    font-weight: bold;
     color: #a9a9a9;
     margin-left: 25px;
 }
@@ -398,18 +444,28 @@ background: url("../img/plus.png") no-repeat center;
     width: 459px;
     height: 60px;
     background: #81b3d2;
-    color: white;
+    color:#ffffff;
     border: none;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
 }
+.blue-button:hover, focus {
+  background: #669ec0;
+}
 
+.blue-button:active { 
+  background: #5496bd;
+  color: #91b7d1;
+}
+
+/*
 .search-item-top input:focus {
     border: 2px solid #e5e5e5;
 }
-
+*/
+/*
 .inner-page .main-header {
     position: relative;
 }
@@ -422,6 +478,8 @@ background: url("../img/plus.png") no-repeat center;
     font-weight: 700;
 }
 
+*/
+
 .choice {
     background-image: url("../img/background.jpg");
     background-color: #81b3d2;
@@ -430,7 +488,7 @@ background: url("../img/plus.png") no-repeat center;
 }
 
 .choice h3 {
-    margin-bottom: 0; 
+    margin-bottom: 0;
     color: #ffffff;
     font-size: 17px;
     margin-top: 25px;
@@ -475,7 +533,7 @@ background: url("../img/plus.png") no-repeat center;
 
 .infrastucture label {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 22px;
     color: #ffffff;
     padding-left: 40px;
     position: relative;
@@ -501,7 +559,7 @@ background: url("../img/plus.png") no-repeat center;
 
 .type-house {
     padding-top: 32px;
-    margin-right: 200px; 
+    margin-right: 200px;
 }
 
 .type-house li {
@@ -517,6 +575,7 @@ background: url("../img/plus.png") no-repeat center;
 .type-house label {
     font-size: 14px;
     line-height: 21px;
+    margin-top: 2px;
     color: #ffffff;
     padding-left: 40px;
     position: relative;
@@ -906,14 +965,14 @@ background: url("../img/plus.png") no-repeat center;
     background: #ffffff;
     position: relative;
     height: 120px;
-    margin-top: 129px; 
+    margin-top: 129px;
 }
 
 .main-footer {
     position: relative;
     width: 100%;
     height: 120px;
-    margin-top: -129px; 
+    margin-top: -129px;
     background: rgba(255, 255, 255, 0.9);
     opacity: 0.9;
     display: flex;
