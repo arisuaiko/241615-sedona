@@ -14,6 +14,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     background: #ffffff;
+    box-shadow: 0 0 40px 0 #dbdbdb;
 }
 
 .visually-hidden {
