@@ -37,21 +37,6 @@ a {
     text-decoration: none;
 }
 
-.button {
-    font: inherit;
-    text-align: center;
-    color: #eeeeee;
-    vertical-align: middle;
-    background-color: #669ec0;
-    border: none;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-    background-color: #669ec0;
-}
-
 .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,6 +118,7 @@ nav ul {
 .intro-text {
     margin-top: 60px;
     text-align: center;
+    font-family: "PT sans", Arial, sans-serif;
 }
 
 .main-title {
@@ -236,7 +222,7 @@ nav ul {
 }
 
 .features-city-advant-column {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 70px;
     width: 400px;
 }
@@ -246,12 +232,13 @@ nav ul {
 }
 
 .small-three {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0 75px;
 }
 
 .small-four {
     margin-top: 20px;
+    margin-bottom: -10px;
     padding-left: 70px;
     padding-right: 70px;
 }
@@ -268,7 +255,7 @@ nav ul {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    padding-top: 39px;
+    padding-top: 50px;
     padding-bottom: 24px;
 }
 
@@ -277,13 +264,24 @@ nav ul {
     border: none;
     text-transform: uppercase;
     color: #ffffff;
-    font-size: 20px;
+    font-family: "PT sans", Arial, sans-serif;
+    font-size: 21px;
     font-weight: 600;
 }
 
 .brown-btn {
     position: relative;
-    margin-top: 50px;
+    margin-top: 47px;
+}
+
+.brown:hover,
+.brown:focus {
+    background: #604e43;
+}
+
+.brown:active {
+    background: #503e33;
+    color: #928a85;
 }
 
 .brown {
@@ -326,7 +324,8 @@ nav ul {
 .search-item-top input {
     width: 325px;
     height: 38px;
-    font-family: "PT sans bold", Arial, sans-serif;
+    font-family: "PT sans", Arial, sans-serif;
+    font-weight: 700;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
@@ -335,7 +334,7 @@ nav ul {
     border: none;
     background: #f2f2f2;
     margin-left: auto;
-    margin-bottom: -11px;
+    margin-bottom: -5px;
 }
 
 .search-item-top input:hover,
@@ -375,36 +374,43 @@ nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 49px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
-.search-item-b:last-child {
-    margin-left: 30px;
-}
-
 .search-item-b {
-    width: 300px;
+    width: 200px;
     margin-top: -5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.children {
+    padding-left: 23px;
+}
+
+.search-item-b label {
+    display: block;
+}
+
 .search-item-b input {
-    width: 300px;
+    width: 345px;
     height: 38px;
+    font-family: "PT sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center; 
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 10px;
     border: none;
     background: #f2f2f2;
-    width: 38px;
+    width: 24px;
 }
 
 .form-small-block {
@@ -416,25 +422,27 @@ nav ul {
     justify-content: center;
 }
 
-.search-item-b .gray-btn {
+.gray-btn {
     width: 38px;
     border: none;
     height: 38px;
+    align-items: center;
+}
+
+.gray-btn svg {
+    align-items: center;
 }
 
 .minus {
     background-color: #f2f2f2;
-    font-size: 40px; 
     color: #a9a9a9;
-    margin-left: 45px;
+    margin-left: 40px;
 }
 
 .plus {
     background-color: #f2f2f2;
-    font-size: 20px;
     font-weight: 700;
     color: #a9a9a9;
-    margin-right: 35px;
 }
 
 .minus:hover,
@@ -463,29 +471,6 @@ focus {
     background: #5496bd;
     color: #91b7d1;
 }
-
-
-/*
-.search-item-top input:focus {
-    border: 2px solid #e5e5e5;
-}
-*/
-
-
-/*
-.inner-page .main-header {
-    position: relative;
-}
-
-.inner-page .main-navigation {
-    margin: 0;
-    font-size: 14px;
-    line-height: 26px;
-    color: #000000;
-    font-weight: 700;
-}
-
-*/
 
 .choice {
     background-image: url("../img/background.jpg");
