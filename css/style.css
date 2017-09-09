@@ -104,6 +104,7 @@ a {
 .site-navigation a {
     color: #000000;
     line-height: 26px;
+    font-weight: bold;
 }
 
 .site-navigation a:hover,
@@ -907,11 +908,12 @@ background: url("../img/plus.png") no-repeat center;
 }
 
 .main-footer {
-    position: absolute;
-    bottom: -120;
-    width: 1200px;
-    height: 120px;
+    position: relative;
+    width: 100%;  
+    margin-top: 20px; 
+    padding-top: 10px; 
     background: rgba(255, 255, 255, 0.9);
+    opacity: 0.9; 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
