@@ -324,7 +324,7 @@ nav ul {
 }
 
 .search-item-top input {
-    width: 345px;
+    width: 325px;
     height: 38px;
     font-family: "PT sans bold", Arial, sans-serif;
     font-size: 14px;
@@ -335,6 +335,7 @@ nav ul {
     border: none;
     background: #f2f2f2;
     margin-left: auto;
+    margin-bottom: -11px;
 }
 
 .search-item-top input:hover,
@@ -374,32 +375,33 @@ nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 49px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .search-item-b:last-child {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .search-item-b {
-    width: 200px;
+    width: 300px;
+    margin-top: -5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .search-item-b input {
-    width: 345px;
+    width: 300px;
     height: 38px;
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
-    padding-left: 15px;
-    padding-right: 15px;
+    text-align: center; 
     border: none;
     background: #f2f2f2;
     width: 38px;
@@ -417,15 +419,14 @@ nav ul {
 .search-item-b .gray-btn {
     width: 38px;
     border: none;
-    height: 40px;
+    height: 38px;
 }
 
 .minus {
     background-color: #f2f2f2;
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 40px; 
     color: #a9a9a9;
-    margin-left: 25px;
+    margin-left: 45px;
 }
 
 .plus {
@@ -433,6 +434,7 @@ nav ul {
     font-size: 20px;
     font-weight: 700;
     color: #a9a9a9;
+    margin-right: 35px;
 }
 
 .minus:hover,
@@ -444,27 +446,32 @@ nav ul {
     width: 459px;
     height: 60px;
     background: #81b3d2;
-    color:#ffffff;
+    color: #ffffff;
     border: none;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
 }
-.blue-button:hover, focus {
-  background: #669ec0;
+
+.blue-button:hover,
+focus {
+    background: #669ec0;
 }
 
-.blue-button:active { 
-  background: #5496bd;
-  color: #91b7d1;
+.blue-button:active {
+    background: #5496bd;
+    color: #91b7d1;
 }
+
 
 /*
 .search-item-top input:focus {
     border: 2px solid #e5e5e5;
 }
 */
+
+
 /*
 .inner-page .main-header {
     position: relative;
