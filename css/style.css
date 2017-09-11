@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    min-width: 1200px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -10,7 +11,6 @@ body {
 }
 
 .wrapper {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     background: #ffffff;
@@ -32,10 +32,6 @@ h1,
 p {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
 }
 
 .main-navigation {
@@ -90,6 +86,7 @@ a {
     color: #000000;
     line-height: 26px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .site-navigation a:hover,
@@ -110,13 +107,14 @@ nav ul {
 
 .intro {
     background-image: url("../img/welcome.png");
+    background-repeat: no-repeat;
     background-color: #81b3d2;
     width: 100%;
     height: 507px;
 }
 
 .intro-text {
-    margin-top: 60px;
+    padding-top: 550px;
     text-align: center;
     font-family: "PT sans", Arial, sans-serif;
 }
@@ -126,26 +124,31 @@ nav ul {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     line-height: 26px;
-    margin-bottom: 28px;
+    margin-bottom: 5px;
+    padding-right: 100px;
+    margin-right: 200px;
+    margin-left: 300px;
 }
 
 .main-title+p {
     line-height: 26px;
-    padding-bottom: 50px;
+    padding-top: 23px;
 }
 
 .features {
+    margin-top: 218px;
     text-align: center;
 }
 
 .features h3 {
+    margin: 0;
     font-size: 21px;
     line-height: 21px;
 }
 
 .features-true-city {
     display: flex;
-    min-height: 258px;
+    min-height: 256px;
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -154,26 +157,30 @@ nav ul {
 
 .features-true-city-column-1 {
     width: 400px;
-    padding: 39px 40px;
 }
 
 .small-one {
-    margin-top: 30px;
-    padding: 0 75px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .small-two {
-    margin-top: 22px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 23px;
+    padding-left: 49px;
+    padding-right: 49px;
 }
 
 .features-true-city-column-1 h3 {
-    line-height: 0px;
+    margin-left: 100px;
+    margin-right: 90px;
+    padding-top: 48px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 .features-true-city-column-2 {
-    line-height: 0px;
+    line-height: 0;
 }
 
 .features-city-adv {
@@ -183,7 +190,7 @@ nav ul {
 
 .features-city-adv-column {
     padding-top: 60px;
-    padding-bottom: 74px;
+    padding-bottom: 75px;
     width: 400px;
 }
 
@@ -193,9 +200,9 @@ nav ul {
 }
 
 .features-city-adv-column:nth-child(2) {
-    padding-top: 66px;
+    padding-top: 63px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .features-city-adv-column:nth-child(3) {
@@ -218,6 +225,7 @@ nav ul {
 
 .features-devil-bridge {
     display: flex;
+    min-height: 256px;
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -230,11 +238,24 @@ nav ul {
 
 .features-devil-bridge-column-2 {
     width: 400px;
-    padding: 37px 30px;
 }
 
 .features-devil-bridge-column-2 h3 {
-    line-height: 0px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-top: 46px;
+}
+
+.small-three {
+    margin-top: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.small-four {
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .features-city-advant {
@@ -247,24 +268,26 @@ nav ul {
 
 .features-city-advant-column {
     padding-top: 44px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     width: 400px;
 }
 
 .features-city-advant-column h3 {
     margin: 0;
-    margin-top: 5px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 2px;
 }
 
-.small-three {
+.small-five {
     margin-top: 25px;
     padding: 0 75px;
 }
 
-.small-four {
-    margin-top: 20px;
-    margin-bottom: -10px;
-    padding-left: 60px;
+.small-six {
+    margin-top: 22px;
+    margin-bottom: 10px;
+    padding-left: 62px;
     padding-right: 65px;
 }
 
@@ -277,11 +300,15 @@ nav ul {
 }
 
 .second-title {
+    margin: 0;
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
-    padding-top: 50px;
-    padding-bottom: 24px;
+    line-height: 30px;
+    padding-top: 51px;
+}
+
+.third-title {
+    padding-top: 28px;
 }
 
 .btn {
@@ -296,7 +323,7 @@ nav ul {
 
 .brown-btn {
     position: relative;
-    margin-top: 47px;
+    margin-top: 48px;
 }
 
 .brown:hover,
@@ -435,8 +462,8 @@ nav ul {
 
 .choice-range {
     padding-top: 26px;
-    margin-left: 221px;
-    margin-right: 60px;
+    margin-left: 230px;
+    margin-right: 61px;
     width: 323px;
     color: #ffffff;
     text-transform: uppercase;
@@ -456,7 +483,7 @@ nav ul {
     margin-top: 10px;
     position: relative;
     height: 34px;
-    width: 320px;
+    width: 312px;
     margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #ffffff;
@@ -477,7 +504,7 @@ nav ul {
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 35px;
+    line-height: 30px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -544,8 +571,8 @@ nav ul {
 
 .filter-button-button {
     display: block;
-    margin: 0px 86px;
-    padding: 5px 25px;
+    margin: 0px 78px;
+    padding: 4px 31px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -609,6 +636,7 @@ nav ul {
 .sort-list a {
     color: #e0e0e0;
     border-bottom: dotted 1px #81b3d2;
+    text-decoration: none;
 }
 
 .sort-list .active {
@@ -678,6 +706,7 @@ nav ul {
 .catalog-item:last-child {
     border-bottom: solid 1px #e5e5e5;
     padding-top: 23px;
+    padding-bottom: 20px;
 }
 
 .catalog-item-products {
@@ -728,6 +757,7 @@ nav ul {
     color: #ffffff;
     padding: 3px 17px;
     background: #81b3d2;
+    text-decoration: none;
 }
 
 .catalog-item-price-info:hover,
@@ -746,6 +776,7 @@ nav ul {
     margin-left: 5px;
     margin-right: 5px;
     background: #766357;
+    text-decoration: none;
 }
 
 .info-brown:hover,
@@ -785,7 +816,6 @@ nav ul {
 .catalog-item-rate-star li {
     width: 18px;
     height: 18px;
-    background: url("../img/star.svg") no-repeat center;
 }
 
 .catalog-item-rate-star li:not(:last-child) {
@@ -816,7 +846,7 @@ nav ul {
     background: #ffffff;
     position: relative;
     height: 120px;
-    margin-top: 122px;
+    margin-top: 127px;
 }
 
 .main-footer {
@@ -1026,7 +1056,7 @@ nav ul {
     margin: 0;
     padding-left: 13px;
     padding-right: 39px;
-    /*для псевдоэлемента календаря*/
+    /*for the pseudo-calendar element*/
     box-sizing: border-box;
     position: relative;
     align-self: flex-end;
@@ -1034,7 +1064,7 @@ nav ul {
 }
 
 
-/*Позиционирование кнопок календаря*/
+/*Positioning the buttons of the calendar*/
 
 .modal-form-item:first-of-type a {
     position: absolute;
@@ -1209,6 +1239,7 @@ nav ul {
     display: block;
     padding: 17px 0;
     width: 458px;
+    text-decoration: none;
 }
 
 .btn-result:hover,
