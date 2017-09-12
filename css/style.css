@@ -843,15 +843,15 @@ nav ul {
   align-items: center;
   position: relative;
   width: 100%;
-  padding: 43px 0;
+  padding: 32px 0;
   background-color: #ffffff;
 }
 
 .main-footer {
   position: relative;
   width: 100%;
-  padding: 30px 0;
-  margin-top: -122px;
+  padding: 21px 0;
+  margin-top: -116px;
   background: rgba(255, 255, 255, 0.9);
   opacity: 0.9;
   display: flex;
@@ -1014,7 +1014,7 @@ nav ul {
   left: 316px;
   right: auto;
   top: 0;
-  padding: 55px;
+  padding: 53px;
   box-sizing: border-box;
 }
 
